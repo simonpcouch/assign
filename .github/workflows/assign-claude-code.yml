@@ -49,7 +49,7 @@ jobs:
       - name: Setup R dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::posit-dev/btw
+          extra-packages: posit-dev/btw
 
       - name: Create MCP config
         run: |

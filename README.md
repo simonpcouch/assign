@@ -1,6 +1,6 @@
 # assign-claude-code
 
-A reusable GitHub workflow that runs Claude Code in an R package directory with R, package dependencies, and an MCP server to read R package documentation.
+A reusable GitHub workflow that runs Claude Code in an R package directory with R, package dependencies, and an MCP server to read R package documentation preconfigured.
 
 ## Usage
 

@@ -21,12 +21,20 @@ on:
 
 jobs:
   claude:
+    permissions:
+      contents: read
+      pull-requests: read
+      issues: read
+      id-token: write
+      actions: read
     uses: simonpcouch/assign/.github/workflows/assign-claude-code.yml@main
     secrets:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 ```
 
 Add your Anthropic API key as a repository secret named `ANTHROPIC_API_KEY`.
+
+Then, install the [Claude Code GitHub App](https://github.com/apps/claude) for your repository.
 
 Tag Claude in issues, pull requests, or comments with `@claude` to invoke the action.
 
